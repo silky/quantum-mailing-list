@@ -20,6 +20,7 @@ Then, navigate to <http://localhost:8000/src/Main.elm>
 
 #### Todo
 
+- [ ] Let people control complex numbers instead of absolute values
 - [ ] Reset button
 - [ ] Page title
 - [ ] Style it
