@@ -1,9 +1,9 @@
 module Main exposing (..)
 
 import Browser
-import Html.Attributes exposing (type_, id, name, for, min, max, value, checked)
+import Html.Attributes exposing (type_, id, name, for, min, max, value, checked, href)
 import Html.Events exposing     (onInput, onClick)
-import Html exposing            (Html, div, text, input, label, h1, button)
+import Html exposing            (Html, div, text, input, label, h1, button, small, a)
 import Random exposing          (Generator)
 
 
@@ -79,6 +79,7 @@ view : Model -> Html Msg
 view model =
   div []
     [ h1 [] [ text "Do you want to join my quantum mailing list?" ]
+    , small [] [ a [ href "https://github.com/silky/quantum-mailing-list"] [ text "source" ] ]
     , div [ ] [ input [ id "yes", type_ "checkbox", checked True ] []
               , label [ for "yes" ] [ text "Yes" ]
               , text ","
